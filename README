@@ -1,0 +1,17 @@
+Auth Extension
+--------------
+
+Extension to create serverless tokens for authentication.
+
+How it works:
+1. Generates an RSA key-pair.
+2. Stores the private key on device(a), sends public key to the host server(b).
+3. Device generates token using the on-device private key.
+4. Token(c) is passed to the end-website for identity providing.
+End-website can check token validity using host server(b).
+
+(a) private key is saved in device's vault.
+(b) host server could be a self-hosted server or a public one.
+(c) token is a JSON Web Token (JWT).
+
+Licensed under BSD.
