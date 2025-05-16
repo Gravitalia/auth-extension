@@ -12,12 +12,11 @@
     "128": "images/icon128.png"
   },
   "permissions": [
-    "cookies",
-    "scripting",
-    "storage"
+    "activeTab",
+    "scripting"
   ],
   "host_permissions": [
-    "https://account.gravitalia.com/"
+    "<all_urls>"
   ],
   "background": {
     "service_worker": "service-worker.js"
